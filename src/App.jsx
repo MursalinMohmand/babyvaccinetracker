@@ -5,14 +5,17 @@ import Modal from "./Components/Modal";
 import { v4 as uuidv4 } from 'uuid';
 import RightSideCard from "./Components/RightSideCard";
 import Empty from "./Components/Empty";
+import babyImage from './assets/baby.png'
+import babyVaccine from './data/VaccineData.json'
 
 export default function App() {
 
   const [showModel, setShowModal] = useState(false)
   const [age, setAge] = useState()
-  const [babyList, setBabyList] = useState([
-
-  ])
+  const [babyList, setBabyList] = useState(() => {
+    const savedBabies = localStorage.getItem("babiesList");
+    return savedBabies ? JSON.parse(savedBabies) : [];
+  });
 
   function ModelClick() {
     setShowModal(true)
@@ -40,6 +43,8 @@ export default function App() {
       DiffMonths--;
     }
 
+
+
     // 4. Fix negative months
     if (DiffMonths < 0) {
       DiffMonths += 12;
@@ -57,7 +62,7 @@ export default function App() {
     // 6. Update object properties and React state
 
     const newBabyRecord = {
-      id: crypto.randomUUID(),
+      id: uuidv4(),
       name: babyData.name,
       dob: babyData.dob,
       gender: babyData.gender,
@@ -72,11 +77,11 @@ export default function App() {
 
     setBabyList([...babyList, newBabyRecord]);
     setAge(finalAge);
-
-
-
-
   }
+
+  useEffect(() => {
+    localStorage.setItem("babiesList", JSON.stringify(babyList));
+  }, [babyList]);
 
   return (
     <>
@@ -89,7 +94,7 @@ export default function App() {
                 [&::-webkit-scrollbar]:hidden overflow-x-auto gap-3">
             {
               babyList.map((baby) => (
-                <BabayCard key={crypto.randomUUID} name={baby.name} dob={baby.dob} age={baby.age} />
+                <BabayCard key={uuidv4()} name={baby.name} dob={baby.dob} age={baby.age} />
               ))
             }
           </div>
@@ -107,6 +112,7 @@ export default function App() {
                     <thead className="h-12 rounded-lg top-0 sticky bg-gray-100">
                       <tr className=" text-indigo-600 text-sm">
                         <th className="text-center">Baby</th>
+                        <th className="text-center">Name</th>
                         <th className="text-center">Vaccine</th>
                         <th className="text-center">Due Date</th>
                         <th className="text-center">Age at Due</th>
@@ -116,18 +122,28 @@ export default function App() {
                     <tbody >
 
 
-                      <tr className="text-center cursor-pointer hover:bg-indigo-50/50 border border-gray-100 rounded-lg">
-                        <td >
-                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1kdP9Ry3QIfI0q9R5yVOhunVKu1bbvkBGTi_4o_YuQw&s=10"
-                            className='w-12 my-1 justify-self-center rounded-full'
-                          />
-                        </td>
-                        <td><h1>PCV II</h1></td>
-                        <td><h1>2027-3-20</h1></td>
-                        <td><h1>2 Months , 2 days</h1></td>
-                        <td ><h1 className='bg-orange-100 text-orange-600 rounded-lg'>Due in 4 Days</h1>
-                        </td>
-                      </tr>
+                      {
+                        babyList.map((item) => {
+                          return (
+                            <tr key={uuidv4()} className="text-center cursor-pointer transition-transform hover:scale-99 hover:shadow-md duration-500 ease-initial hover:bg-indigo-50/50 border border-gray-100 rounded-lg">
+                              <td >
+                                <img src={babyImage}
+                                  className='w-12 my-1 justify-self-center rounded-full'
+                                />
+                              </td>
+                              <td><h1>{item.name}</h1></td>
+                              <td><h1>{item.name}</h1></td>
+                              <td><h1>{item.dob}</h1></td>
+                              <td><h1>{item.age}</h1></td>
+                              <td ><h1 className='bg-orange-100 text-orange-600 rounded-lg'>Due in 4 Days</h1>
+                              </td>
+                            </tr>
+                          )
+
+
+                        })
+                      }
+
 
                     </tbody>
                   </table>

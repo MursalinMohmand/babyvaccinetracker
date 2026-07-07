@@ -1,5 +1,6 @@
 import React from "react";
 import { EllipsisVertical, Syringe } from "lucide-react";
+import babyImage from '../assets/baby.png'
 
 export default function BabyCard({ name, dob, age }) {
   return (
@@ -9,7 +10,7 @@ export default function BabyCard({ name, dob, age }) {
           <div className="flex items-center gap-5">
             <img
               className="w-18 rounded-full"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1kdP9Ry3QIfI0q9R5yVOhunVKu1bbvkBGTi_4o_YuQw&s=10"
+              src={babyImage}
             />
             <div>
               <h1 className="font-bold">{name}</h1>

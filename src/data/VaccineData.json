@@ -1,0 +1,199 @@
+{
+  "VaccineDate": [
+    {
+      "id": "vac-bcg",
+      "name": "BCG",
+      "recommendedAgeWeeks": 0,
+      "recommendedAgeText": "Birth",
+      "dueDaysFromBirth": 0,
+      "route": "Intradermal Injection",
+      "protectsAgainst": ["Tuberculosis (TB)"],
+      "sideEffects": [
+        "Small scar/ulcer at injection site",
+        "Swollen lymph nodes"
+      ]
+    },
+    {
+      "id": "vac-hepb-0",
+      "name": "Hepatitis B (Birth Dose)",
+      "recommendedAgeWeeks": 0,
+      "recommendedAgeText": "Birth",
+      "dueDaysFromBirth": 0,
+      "route": "Intramuscular Injection",
+      "protectsAgainst": ["Hepatitis B Virus"],
+      "sideEffects": ["Soreness at injection site", "Low-grade fever"]
+    },
+    {
+      "id": "vac-opv-0",
+      "name": "OPV 0",
+      "recommendedAgeWeeks": 0,
+      "recommendedAgeText": "Birth",
+      "dueDaysFromBirth": 0,
+      "route": "Oral Drops",
+      "protectsAgainst": ["Poliomyelitis (Polio)"],
+      "sideEffects": ["Rarely any side effects", "Mild diarrhea"]
+    },
+    {
+      "id": "vac-penta-1",
+      "name": "Pentavalent 1",
+      "recommendedAgeWeeks": 6,
+      "recommendedAgeText": "6 Weeks",
+      "dueDaysFromBirth": 42,
+      "route": "Intramuscular Injection",
+      "protectsAgainst": [
+        "Diphtheria",
+        "Tetanus",
+        "Pertussis (Whooping Cough)",
+        "Hepatitis B",
+        "Hib (Haemophilus Influenzae Type B)"
+      ],
+      "sideEffects": ["Fever", "Swelling at injection site", "Irritability"]
+    },
+    {
+      "id": "vac-opv-1",
+      "name": "OPV 1",
+      "recommendedAgeWeeks": 6,
+      "recommendedAgeText": "6 Weeks",
+      "dueDaysFromBirth": 42,
+      "route": "Oral Drops",
+      "protectsAgainst": ["Poliomyelitis (Polio)"],
+      "sideEffects": ["Mild diarrhea", "Irritability"]
+    },
+    {
+      "id": "vac-pcv-1",
+      "name": "PCV 1",
+      "recommendedAgeWeeks": 6,
+      "recommendedAgeText": "6 Weeks",
+      "dueDaysFromBirth": 42,
+      "route": "Intramuscular Injection",
+      "protectsAgainst": ["Pneumococcal Diseases (Pneumonia, Meningitis)"],
+      "sideEffects": ["Fever", "Mild redness or swelling", "Decreased appetite"]
+    },
+    {
+      "id": "vac-rota-1",
+      "name": "Rotavirus 1",
+      "recommendedAgeWeeks": 6,
+      "recommendedAgeText": "6 Weeks",
+      "dueDaysFromBirth": 42,
+      "route": "Oral Liquid",
+      "protectsAgainst": ["Rotavirus Gastroenteritis (Severe Diarrhea)"],
+      "sideEffects": ["Mild diarrhea", "Vomiting", "Fussiness"]
+    },
+    {
+      "id": "vac-penta-2",
+      "name": "Pentavalent 2",
+      "recommendedAgeWeeks": 10,
+      "recommendedAgeText": "10 Weeks",
+      "dueDaysFromBirth": 70,
+      "route": "Intramuscular Injection",
+      "protectsAgainst": [
+        "Diphtheria",
+        "Tetanus",
+        "Pertussis",
+        "Hepatitis B",
+        "Hib"
+      ],
+      "sideEffects": ["Fever", "Swelling at injection site", "Fussiness"]
+    },
+    {
+      "id": "vac-opv-2",
+      "name": "OPV 2",
+      "recommendedAgeWeeks": 10,
+      "recommendedAgeText": "10 Weeks",
+      "dueDaysFromBirth": 70,
+      "route": "Oral Drops",
+      "protectsAgainst": ["Poliomyelitis (Polio)"],
+      "sideEffects": ["Mild diarrhea"]
+    },
+    {
+      "id": "vac-pcv-2",
+      "name": "PCV 2",
+      "recommendedAgeWeeks": 10,
+      "recommendedAgeText": "10 Weeks",
+      "dueDaysFromBirth": 70,
+      "route": "Intramuscular Injection",
+      "protectsAgainst": ["Pneumococcal Diseases"],
+      "sideEffects": ["Fever", "Soreness at injection site"]
+    },
+    {
+      "id": "vac-rota-2",
+      "name": "Rotavirus 2",
+      "recommendedAgeWeeks": 10,
+      "recommendedAgeText": "10 Weeks",
+      "dueDaysFromBirth": 70,
+      "route": "Oral Liquid",
+      "protectsAgainst": ["Rotavirus Gastroenteritis"],
+      "sideEffects": ["Fussiness", "Mild diarrhea"]
+    },
+    {
+      "id": "vac-penta-3",
+      "name": "Pentavalent 3",
+      "recommendedAgeWeeks": 14,
+      "recommendedAgeText": "14 Weeks",
+      "dueDaysFromBirth": 98,
+      "route": "Intramuscular Injection",
+      "protectsAgainst": [
+        "Diphtheria",
+        "Tetanus",
+        "Pertussis",
+        "Hepatitis B",
+        "Hib"
+      ],
+      "sideEffects": ["Fever", "Swelling", "Mild crying"]
+    },
+    {
+      "id": "vac-opv-3",
+      "name": "OPV 3",
+      "recommendedAgeWeeks": 14,
+      "recommendedAgeText": "14 Weeks",
+      "dueDaysFromBirth": 98,
+      "route": "Oral Drops",
+      "protectsAgainst": ["Poliomyelitis (Polio)"],
+      "sideEffects": ["Mild fussiness"]
+    },
+    {
+      "id": "vac-ipv-1",
+      "name": "IPV 1",
+      "recommendedAgeWeeks": 14,
+      "recommendedAgeText": "14 Weeks",
+      "dueDaysFromBirth": 98,
+      "route": "Intramuscular Injection",
+      "protectsAgainst": ["Poliomyelitis (Polio)"],
+      "sideEffects": ["Redness", "Soreness at injection site"]
+    },
+    {
+      "id": "vac-pcv-3",
+      "name": "PCV 3",
+      "recommendedAgeWeeks": 14,
+      "recommendedAgeText": "14 Weeks",
+      "dueDaysFromBirth": 98,
+      "route": "Intramuscular Injection",
+      "protectsAgainst": ["Pneumococcal Diseases"],
+      "sideEffects": ["Fever", "Mild redness"]
+    },
+    {
+      "id": "vac-mr-1",
+      "name": "Measles & Rubella 1 (MR 1)",
+      "recommendedAgeWeeks": 39,
+      "recommendedAgeText": "9 Months",
+      "dueDaysFromBirth": 273,
+      "route": "Subcutaneous Injection",
+      "protectsAgainst": ["Measles", "Rubella (German Measles)"],
+      "sideEffects": [
+        "Mild rash 5-12 days post-vaccination",
+        "Fever",
+        "Soreness"
+      ]
+    },
+    {
+      "id": "vac-mr-2",
+      "name": "Measles & Rubella 2 (MR 2)",
+      "recommendedAgeWeeks": 65,
+      "recommendedAgeText": "15 Months",
+      "dueDaysFromBirth": 455,
+      "route": "Subcutaneous Injection",
+      "protectsAgainst": ["Measles", "Rubella"],
+      "sideEffects": ["Mild rash", "Temporary low fever"]
+    }
+  ]
+}
