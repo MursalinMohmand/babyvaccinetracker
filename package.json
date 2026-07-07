@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://mursalinmohmand.github.io/babyvaccinetracker/",
+  "homepage": "https://mursalinmohmand.github.io/babyvaccinetracker",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
